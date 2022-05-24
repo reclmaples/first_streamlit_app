@@ -49,7 +49,7 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_c
 fruity_vice_normalized = pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruity_vice_normalized)
 
-streamlit.stop()
+#streamlit.stop()
 
 streamlit.header("The fruit load list contains:")
 def get_fruit_load_list():
